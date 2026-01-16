@@ -1,0 +1,43 @@
+{
+  "$jsonSchema": {
+    "bsonType": "object",
+    "required": ["marca", "model", "any", "preu", "moneda", "dataAlta"],
+    "properties": {
+      "marca": {
+        "bsonType": "string",
+        "description": "Marca del vehicle"
+      },
+      "model": {
+        "bsonType": "string",
+        "description": "Model del vehicle"
+      },
+      "any": {
+        "bsonType": "int",
+        "minimum": 1980,
+        "description": "Any de fabricació"
+      },
+      "preu": {
+        "bsonType": "int",
+        "minimum": 0,
+        "description": "Preu del vehicle"
+      },
+      "moneda": {
+        "bsonType": "string",
+        "description": "Moneda del preu"
+      },
+      "dataAlta": {
+        "bsonType": "date",
+        "description": "Data d'alta del registre"
+      },
+      "tipus": {
+        "bsonType": "string"
+      },
+      "traccio": {
+        "bsonType": "string"
+      },
+      "origen": {
+        "bsonType": "string"
+      }
+    }
+  }
+}
